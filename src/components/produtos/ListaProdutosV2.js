@@ -5,10 +5,8 @@ import Estilo from '../estilo'
 import produtos from './produtos'
 
 export default props => {
-    const produtoRender = ({item: p}) => {
-        ({ item: p }) => {
-            return <Text>{p.id} {p.nome}</Text>
-        }
+    const produtoRender = ({ item: p}) => {
+        return <Text>{p.id}) {p.nome} - R$ {p.preco}</Text>
     }
 
     return ( 
